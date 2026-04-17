@@ -99,10 +99,11 @@ python src/insurance_pricing_project.py
 ## Visualizations
 
 ### Claim Frequency: Actual vs Predicted
-![Frequency Plot](outputs/freq_actual_vs_pred.png)
+![Frequency](freq_actual_vs_pred.png)
 
 ### Claim Severity: Actual vs Predicted
-![Severity Plot](outputs/sev_actual_vs_pred.png)
+![Severity](sev_actual_vs_pred.png)
 
 ### Premium by Risk Factor (MVR Points)
-![Premium Plot](outputs/premium_by_mvr.png)
+![MVR](premium_by_mvr.png)
+
