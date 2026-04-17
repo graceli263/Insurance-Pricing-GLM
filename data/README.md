@@ -90,13 +90,8 @@ The project includes:
 
 ---
 
-## How to Run
-```bash
-pip install -r requirements.txt
-python src/insurance_pricing_project.py
-
-
 ## Visualizations
+
 
 ### Claim Frequency
 ![Frequency](outputs/freq_actual_vs_pred.png)
@@ -106,4 +101,16 @@ python src/insurance_pricing_project.py
 
 ### Premium by MVR Points
 ![MVR](outputs/premium_by_mvr.png)
+
+
+
+## How to Run
+```bash
+pip install -r requirements.txt
+python src/insurance_pricing_project.py
+
+
+
+
+
 
