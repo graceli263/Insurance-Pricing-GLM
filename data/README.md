@@ -92,7 +92,6 @@ The project includes:
 
 ## Visualizations
 
-
 ### Claim Frequency
 ![Frequency](outputs/freq_actual_vs_pred.png)
 
