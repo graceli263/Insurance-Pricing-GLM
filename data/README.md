@@ -94,3 +94,15 @@ The project includes:
 ```bash
 pip install -r requirements.txt
 python src/insurance_pricing_project.py
+
+
+## Visualizations
+
+### Claim Frequency: Actual vs Predicted
+![Frequency Plot](outputs/freq_actual_vs_pred.png)
+
+### Claim Severity: Actual vs Predicted
+![Severity Plot](outputs/sev_actual_vs_pred.png)
+
+### Premium by Risk Factor (MVR Points)
+![Premium Plot](outputs/premium_by_mvr.png)
