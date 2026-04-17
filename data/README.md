@@ -93,13 +93,13 @@ The project includes:
 ## Visualizations
 
 ### Claim Frequency
-![Frequency](outputs/freq_actual_vs_pred.png)
+![Frequency](freq_actual_vs_pred.png)
 
 ### Claim Severity
-![Severity](outputs/sev_actual_vs_pred.png)
+![Severity](sev_actual_vs_pred.png)
 
 ### Premium by MVR Points
-![MVR](outputs/premium_by_mvr.png)
+![MVR](premium_by_mvr.png)
 
 
 
