@@ -58,37 +58,45 @@ Pure premium was calculated as:
 
 ---
 
+## Why Negative Binomial?
+
+The standard Poisson model assumes that the mean and variance of claim counts are equal.  
+However, this assumption was violated in the dataset.
+
+Observed:
+- The Pearson Chi-square statistic was significantly larger than the degrees of freedom  
+- This indicates that the claim frequency data is **overdispersed**  
+
+Implication:
+- The Poisson model understates variability and may produce biased estimates  
+
+Solution:
+- A **Negative Binomial GLM** was used instead  
+
+Benefits:
+- Captures extra variability in claim counts  
+- Provides a more realistic representation of insurance risk  
+- Improves overall model fit  
+
+---
+
 ## Key Results
-- MVR points strongly increase expected premium
-- Frequency is more sensitive to driving behavior
-- Severity is harder to predict and shows more variability
-- The Negative Binomial model improves on Poisson when claim counts are overdispersed
+
+- Modeled over **8,000+ policyholders**  
+- MVR points show a strong positive relationship with expected premium  
+- Claim frequency is more responsive to risk factors than claim severity  
+- Negative Binomial provides a better fit than Poisson for overdispersed data  
+- Claim severity remains difficult to predict due to heavy-tailed loss distribution  
 
 ---
 
-## Visualizations
-The project includes:
-- Actual vs predicted claim frequency
-- Actual vs predicted claim severity
-- Average pure premium by MVR points
+## Business Interpretation
 
----
+- Policyholders with higher MVR points should be charged higher premiums  
+- Claim frequency and severity should be modeled separately due to different underlying drivers  
+- Overdispersion must be accounted for when modeling claim counts  
+- Pure premium enables effective **risk-based pricing segmentation**  
 
-## Files
-- `src/insurance_pricing_project.py`: main modeling script
-- `outputs/insurance_pricing_predictions_nb.csv`: predicted premiums
-- `outputs/*.png`: saved visualizations
-
----
-
-## Tools Used
-- Python
-- pandas
-- numpy
-- statsmodels
-- matplotlib
-
----
 
 ## Visualizations
 
